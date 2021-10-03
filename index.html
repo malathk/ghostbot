@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball: project demo</title>
+    <!-- Link to JavaScript -->
+    <script src=scripts.js defer></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Including "defer" ensures that the script will not run until the HTML page is fully loaded and rendered. -->
+</head>
+<body>
+   
+<div class="phone">
+<div class="txts">
+    <p id="my-text-pushed" class="txt"></p>
+    <p type="text" class=" txt excuse " id="story"></p>
+  
+<form id="my-form" onSubmit="return false;" > 
+    <!-- <label for="my-text"></label> -->
+    <input autocomplete= "off" type="text" id="my-text" onclick="refresh()" class="txt my-text" placeholder="iMessage" onchange="sendText()">
+   
+</form>
+
+</div>
+
+</div>
+</body>
+</html>
